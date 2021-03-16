@@ -1,0 +1,65 @@
+$button-bgcolor: #3b49df;
+$button-color: #f6f7f9;
+$font-normal: 400;
+$font-medium: 500;
+$font-bold: 700;
+$font-heavy: 800;
+$base-measure: 1rem;
+$font-size: 1rem;
+$font-link: #202428;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: $font-size;
+}
+body {
+  font-family: sans-serif;
+  background-color: #eef0f1;
+}
+
+.container-left-nav {
+  li,
+  a {
+    color: #202428;
+  }
+  li:hover {
+    background-color: rgba(8, 9, 10, 0.05);
+  }
+  .bg-tansparent {
+    background-color: transparent !important;
+    border: none;
+  }
+  .card,
+  .card-header,
+  .list-group-item {
+    background-color: transparent !important;
+    border: none;
+  }
+  .icons-nav {
+    vertical-align: middle;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-header a {
+    font-weight: $font-bold;
+  }
+  .card-text-left-nav {
+    text-align: center;
+    line-height: 1.2em;
+    color: #3b49df;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .list-group {
+    background-color: transparent !important;
+    max-height: 150px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}

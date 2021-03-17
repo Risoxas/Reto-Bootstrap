@@ -1,0 +1,43 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+.post-button {
+  background-color: #3b49df;
+  -webkit-box-shadow: 0 1px 3px;
+          box-shadow: 0 1px 3px;
+  font-weight: 500;
+}
+
+.searchbar {
+  width: 400px;
+}
+
+.social-foot {
+  background-color: #d2d6db;
+}
+
+nav a {
+  color: #202428;
+}
+
+.link-footer {
+  color: black;
+}
+
+.footer-description {
+  font-size: 0.875rem;
+  color: #4d5760;
+}
+
+.sloth {
+  right: 3rem;
+  top: -2px;
+}
+/*# sourceMappingURL=style.css.map */

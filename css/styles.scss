@@ -32,9 +32,9 @@ body {
     background-color: transparent !important;
     border: none;
   }
-  .card,
-  .card-header,
-  .list-group-item {
+  .card-ivan,
+  .card-header-ivan,
+  .list-group-item-ivan {
     background-color: transparent !important;
     border: none;
   }
@@ -65,38 +65,38 @@ body {
   }
 }
 
-.post-button{
-    background-color: #3b49df;
-    box-shadow: 0 1px 3px ;
-    font-weight: 500;
+.post-button {
+  background-color: #3b49df;
+  box-shadow: 0 1px 3px;
+  font-weight: 500;
 }
 
-.searchbar{
-    width: 400px;
+.searchbar {
+  width: 400px;
 }
 
-.social-foot{
-    background-color: #d2d6db;
+.social-foot {
+  background-color: #d2d6db;
 }
 
-nav{
-    a{
-        color: #202428;
-    }
+nav {
+  a {
+    color: #202428;
+  }
 }
-.link-footer{
-    color: black;
+.link-footer {
+  color: black;
 }
-.footer-description{
-    font-size: .875*$base-measure;
-    color: #4d5760;
+.footer-description {
+  font-size: 0.875 * $base-measure;
+  color: #4d5760;
 }
-.sloth{
+.sloth {
   right: 8rem;
-  top: 1px  ;
+  top: 1px;
 }
 
-.header{
+.header {
   top: 0;
   right: 0;
   left: 0;
@@ -104,6 +104,6 @@ nav{
   z-index: $zindex-fixed;
 }
 
-.nav-class{
+.nav-class {
   max-width: 1280px;
 }

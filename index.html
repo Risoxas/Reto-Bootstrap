@@ -1,385 +1,567 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev Community 👩‍💻👨‍💻</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- INICIO DE MAIN NAVBAR PARTE DAVID -->
     <header class="position-fixed header">
-        <nav class="d-flex align-items-center bg-light px-3 py-0 position-relative m-auto nav-class">
-            <button class="navbar-toggler p-2 m-1 d-md-none" type="button" data-toggle="collapse" data-target="#nav1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" fill="currentColor" class="bi bi-list"
-                    viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                </svg>
-            </button>
-            <a href="/" class="navbar-brand m-0">
-                <svg width="50" height="40" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="50" height="40" rx="3" style="fill: black;"></rect>
-                    <path
-                        d="M19.099 23.508c0 1.31-.423 2.388-1.27 3.234-.838.839-1.942 1.258-3.312 1.258h-4.403V12.277h4.492c1.31 0 2.385.423 3.224 1.27.846.838 1.269 1.912 1.269 3.223v6.738zm-2.808 0V16.77c0-.562-.187-.981-.562-1.258-.374-.285-.748-.427-1.122-.427h-1.685v10.107h1.684c.375 0 .75-.138 1.123-.415.375-.285.562-.708.562-1.27zM28.185 28h-5.896c-.562 0-1.03-.187-1.404-.561-.375-.375-.562-.843-.562-1.404V14.243c0-.562.187-1.03.562-1.404.374-.375.842-.562 1.404-.562h5.896v2.808H23.13v3.65h3.088v2.808h-3.088v3.65h5.054V28zm7.12 0c-.936 0-1.684-.655-2.246-1.965l-3.65-13.758h3.089l2.807 10.804 2.808-10.804H41.2l-3.65 13.758C36.99 27.345 36.241 28 35.305 28z"
-                        style="fill: white;"></path>
-                </svg>
-            </a>
-            <div class="form-outline d-none d-md-block ml-3 searchbar">
-                <input type="search" class="form-control" placeholder="Search..." aria-label="Search" />
-            </div>
-            <div class="d-flex items-center h-100 ml-auto">
-                <a href="/search" class="d-md-none mx-1 p-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
-                        aria-labelledby="amnkeig7ypu9cfb2ao6sze9v2huvx504" class="crayons-icon">
-                        <title id="amnkeig7ypu9cfb2ao6sze9v2huvx504">Search</title>
-                        <path
-                            d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z">
-                        </path>
-                    </svg>
-                </a>
-                <a href="/New" class="d-none d-md-block btn btn-primary mr-2 ml-auto p-2 post-button">
-                    Write a post
-                </a>
-                <a href="/Connect" class="mx-1 p-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
-                        aria-labelledby="as2o354vhiz7hb84l0cx4edsgnvmxbzn" class="crayons-icon">
-                        <title id="as2o354vhiz7hb84l0cx4edsgnvmxbzn">Connect</title>
-                        <path
-                            d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10H2l2.929-2.929A9.969 9.969 0 012 12zm4.828 8H12a8 8 0 10-8-8c0 2.152.851 4.165 2.343 5.657l1.414 1.414-.929.929zM8 13h8a4 4 0 11-8 0z">
-                        </path>
-                    </svg>
-                </a>
-                <a href="/Notification" class="mx-1 p-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
-                        aria-labelledby="a9re36cbnyo8nw6cjhl6j39f0juzfinw" class="crayons-icon">
-                        <title id="a9re36cbnyo8nw6cjhl6j39f0juzfinw">Notifications</title>
-                        <path d="M20 17h2v2H2v-2h2v-7a8 8 0 1116 0v7zm-2 0v-7a6 6 0 10-12 0v7h12zm-9 4h6v2H9v-2z">
-                        </path>
-                    </svg>
-                </a>
-                <a href="/Profile" class="mx-1 p-2">
-                    <img class="rg_i Q4LuWd"
-                        src="data:image/png;base64,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"
-                        data-deferred="1" jsname="Q4LuWd" width="24" height="24" data-index="0"
-                        alt="File:Circle-icons-profile.svg - Wikipedia" data-iml="1070.4749999986234" data-atf="true">
-                </a>
-            </div>
-        </nav>
+      <nav
+        class="d-flex align-items-center bg-light px-3 py-0 position-relative m-auto nav-class"
+      >
+        <button
+          class="navbar-toggler p-2 m-1 d-md-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#nav1"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="28"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+        <a href="/" class="navbar-brand m-0">
+          <svg
+            width="50"
+            height="40"
+            viewBox="0 0 50 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="50" height="40" rx="3" style="fill: black"></rect>
+            <path
+              d="M19.099 23.508c0 1.31-.423 2.388-1.27 3.234-.838.839-1.942 1.258-3.312 1.258h-4.403V12.277h4.492c1.31 0 2.385.423 3.224 1.27.846.838 1.269 1.912 1.269 3.223v6.738zm-2.808 0V16.77c0-.562-.187-.981-.562-1.258-.374-.285-.748-.427-1.122-.427h-1.685v10.107h1.684c.375 0 .75-.138 1.123-.415.375-.285.562-.708.562-1.27zM28.185 28h-5.896c-.562 0-1.03-.187-1.404-.561-.375-.375-.562-.843-.562-1.404V14.243c0-.562.187-1.03.562-1.404.374-.375.842-.562 1.404-.562h5.896v2.808H23.13v3.65h3.088v2.808h-3.088v3.65h5.054V28zm7.12 0c-.936 0-1.684-.655-2.246-1.965l-3.65-13.758h3.089l2.807 10.804 2.808-10.804H41.2l-3.65 13.758C36.99 27.345 36.241 28 35.305 28z"
+              style="fill: white"
+            ></path>
+          </svg>
+        </a>
+        <div class="form-outline d-none d-md-block ml-3 searchbar">
+          <input
+            type="search"
+            class="form-control"
+            placeholder="Search..."
+            aria-label="Search"
+          />
+        </div>
+        <div class="d-flex items-center h-100 ml-auto">
+          <a href="/search" class="d-md-none mx-1 p-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              role="img"
+              aria-labelledby="amnkeig7ypu9cfb2ao6sze9v2huvx504"
+              class="crayons-icon"
+            >
+              <title id="amnkeig7ypu9cfb2ao6sze9v2huvx504">Search</title>
+              <path
+                d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="/New"
+            class="d-none d-md-block btn btn-primary mr-2 ml-auto p-2 post-button"
+          >
+            Write a post
+          </a>
+          <a href="/Connect" class="mx-1 p-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              role="img"
+              aria-labelledby="as2o354vhiz7hb84l0cx4edsgnvmxbzn"
+              class="crayons-icon"
+            >
+              <title id="as2o354vhiz7hb84l0cx4edsgnvmxbzn">Connect</title>
+              <path
+                d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10H2l2.929-2.929A9.969 9.969 0 012 12zm4.828 8H12a8 8 0 10-8-8c0 2.152.851 4.165 2.343 5.657l1.414 1.414-.929.929zM8 13h8a4 4 0 11-8 0z"
+              ></path>
+            </svg>
+          </a>
+          <a href="/Notification" class="mx-1 p-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              role="img"
+              aria-labelledby="a9re36cbnyo8nw6cjhl6j39f0juzfinw"
+              class="crayons-icon"
+            >
+              <title id="a9re36cbnyo8nw6cjhl6j39f0juzfinw">Notifications</title>
+              <path
+                d="M20 17h2v2H2v-2h2v-7a8 8 0 1116 0v7zm-2 0v-7a6 6 0 10-12 0v7h12zm-9 4h6v2H9v-2z"
+              ></path>
+            </svg>
+          </a>
+          <a href="/Profile" class="mx-1 p-2">
+            <img
+              class="rg_i Q4LuWd"
+              src="data:image/png;base64,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"
+              data-deferred="1"
+              jsname="Q4LuWd"
+              width="24"
+              height="24"
+              data-index="0"
+              alt="File:Circle-icons-profile.svg - Wikipedia"
+              data-iml="1070.4749999986234"
+              data-atf="true"
+            />
+          </a>
+        </div>
+      </nav>
     </header>
     <!-- FIN DE MAIN NAVBAR PARTE DAVID-->
 
     <!-- INICIO CONTENIDO PRINCIPAL BOOTSTRAP -->
     <div class="container-md container-lg m-5 w-60 container-left-nav">
-        <div class="row">
-            <!-- INICIA CONTENIDO DE LEFT SIDENAVBAR BOOTSTRAP PARTE IVAN-->
-            <div class="col-md-3 col-lg-2 d-none d-md-block p-0 ml-lg-5">
-                <ul class="nav flex-column justify-content-start">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            <span>
-                                <img class="icons-nav" src="icons/home-icon-left.svg" alt="" />
-                            </span>
-                            Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            <span>
-                                <img class="icons-nav" src="icons/reading-list.svg" alt="" />
-                            </span>
-                            Reading List</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            <span>
-                                <img class="icons-nav" src="icons/listings.svg" alt="" />
-                            </span>
-                            Listing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            <span>
-                                <img class="icons-nav" src="icons/podcasts.svg" alt="" />
-                            </span>
-                            Podcast</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            <span>
-                                <img class="icons-nav" src="icons/videos.svg" alt="" />
-                            </span>
-                            Videos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            <span>
-                                <img class="icons-nav" src="icons/tags.svg" alt="" />
-                            </span>
-                            Tags</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            <span>
-                                <img class="icons-nav" src="icons/code-of-conduct.svg" alt="" />
-                            </span>
-                            Code of Conduct</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            <span>
-                                <img class="icons-nav" src="icons/faqs.svg" alt="" />
-                            </span>
-                            FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            <span>
-                                <img class="icons-nav" src="icons/dev-shop.svg" alt="" />
-                            </span>
-                            DEV Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            <span>
-                                <img class="icons-nav" src="icons/sponsors.svg" alt="" />
-                            </span>
-                            Sponsors</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            <span>
-                                <img class="icons-nav" src="icons/about.svg" alt="" />
-                            </span>
-                            About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            <span>
-                                <img class="icons-nav" src="icons/privacypolicy.svg" alt="" />
-                            </span>
-                            Privacy Policy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            <span>
-                                <img class="icons-nav" src="icons/terms-of-use.svg" alt="" />
-                            </span>
-                            Terms of Use</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            <span>
-                                <img class="icons-nav" src="icons/contact.svg" alt="" />
-                            </span>
-                            Contact</a>
-                    </li>
-                </ul>
-                <div class="card mt-3 mb-5">
-                    <div class="card-header">
-                        <a class="d-flex justify-content-between pr-10.-" href="#">
-                            My Tags
-                            <span>
-                                <img class="icons-nav" src="icons/hex-sidebarleft.svg" alt="" /> </span></a>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item pt-0">#javascript</li>
-                        <li class="list-group-item pt-2">#webdev</li>
-                        <li class="list-group-item pt-2">#react</li>
-                        <li class="list-group-item pt-2">#python</li>
-                        <li class="list-group-item pt-2">#git</li>
-                        <li class="list-group-item pt-2">#angular</li>
-                        <li class="list-group-item pt-2">#vue</li>
+      <div class="row">
+        <!-- INICIA CONTENIDO DE LEFT SIDENAVBAR BOOTSTRAP PARTE IVAN-->
+        <div class="col-md-3 col-lg-2 d-none d-md-block p-0 ml-lg-5">
+          <ul class="nav flex-column justify-content-start">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span>
+                  <img
+                    class="icons-nav"
+                    src="icons/home-icon-left.svg"
+                    alt=""
+                  />
+                </span>
+                Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span>
+                  <img class="icons-nav" src="icons/reading-list.svg" alt="" />
+                </span>
+                Reading List</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span>
+                  <img class="icons-nav" src="icons/listings.svg" alt="" />
+                </span>
+                Listing</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span>
+                  <img class="icons-nav" src="icons/podcasts.svg" alt="" />
+                </span>
+                Podcast</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span>
+                  <img class="icons-nav" src="icons/videos.svg" alt="" />
+                </span>
+                Videos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span>
+                  <img class="icons-nav" src="icons/tags.svg" alt="" />
+                </span>
+                Tags</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span>
+                  <img
+                    class="icons-nav"
+                    src="icons/code-of-conduct.svg"
+                    alt=""
+                  />
+                </span>
+                Code of Conduct</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span>
+                  <img class="icons-nav" src="icons/faqs.svg" alt="" />
+                </span>
+                FAQ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span>
+                  <img class="icons-nav" src="icons/dev-shop.svg" alt="" />
+                </span>
+                DEV Shop</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span>
+                  <img class="icons-nav" src="icons/sponsors.svg" alt="" />
+                </span>
+                Sponsors</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span>
+                  <img class="icons-nav" src="icons/about.svg" alt="" />
+                </span>
+                About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span>
+                  <img class="icons-nav" src="icons/privacypolicy.svg" alt="" />
+                </span>
+                Privacy Policy</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span>
+                  <img class="icons-nav" src="icons/terms-of-use.svg" alt="" />
+                </span>
+                Terms of Use</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span>
+                  <img class="icons-nav" src="icons/contact.svg" alt="" />
+                </span>
+                Contact</a
+              >
+            </li>
+          </ul>
+          <div class="card card-ivan mt-3 mb-5">
+            <div class="card-header card-header-ivan">
+              <a class="d-flex justify-content-between pr-10.-" href="#">
+                My Tags
+                <span>
+                  <img
+                    class="icons-nav"
+                    src="icons/hex-sidebarleft.svg"
+                    alt=""
+                  /> </span
+              ></a>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item list-group-item-ivan pt-0">
+                #javascript
+              </li>
+              <li class="list-group-item list-group-item-ivan pt-2">#webdev</li>
+              <li class="list-group-item list-group-item-ivan pt-2">#react</li>
+              <li class="list-group-item list-group-item-ivan pt-2">#python</li>
+              <li class="list-group-item list-group-item-ivan pt-2">#git</li>
+              <li class="list-group-item list-group-item-ivan pt-2">
+                #angular
+              </li>
+              <li class="list-group-item list-group-item-ivan pt-2">#vue</li>
 
-                        <li class="list-group-item">#Java</li>
-                    </ul>
-                </div>
+              <li class="list-group-item list-group-item-ivan">#Java</li>
+            </ul>
+          </div>
 
-                <div class="card bg-tansparent rounded d-flex justify-content-center">
-                    <img class="card-img-top rounded" src="images/nmgcttm65v389g8cuozn.jfif" alt="Card image cap" />
-                    <div class="card-body">
-                        <h2 class="card-text card-text-left-nav">
-                            I feel your lack of merch distributing
-                        </h2>
-                    </div>
-                </div>
+          <div class="card bg-tansparent rounded d-flex justify-content-center">
+            <img
+              class="card-img-top rounded"
+              src="images/nmgcttm65v389g8cuozn.jfif"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h2 class="card-text card-text-left-nav">
+                I feel your lack of merch distributing
+              </h2>
             </div>
-            <!-- FINALIZA CONTENIDO DE LEFT SIDENAVBAR BOOTSTRAP FIN PARTE IVAN -->
-            <!-- INICIA CONTENIDO DE MAIN CARDS BOOTSTRAP PARTE YAIR-->
-            <div class="col-md-8 offset-md-1 offset-lg-1 col-lg-6 p-0">
-                <div class="card text-center">
-                    <div class="card-header">
-                        <ul class="nav nav-pills card-header-pills">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Active</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">
-                            With supporting text below as a natural lead-in to additional
-                            content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <!-- FINALIZA CONTENIDO DE MAIN CARDS BOOTSTRAP PARTE YAIR-->
-            <!-- INICIA CONTENIDO DE RIGHT CARDS BOOTSTRAP PARTE DIANA-->
-            <div class="col-lg-1 offset-lg-1 p-0 d-none d-lg-block">
-                <div class="card" style="width: 18rem">
-                    <img src="https://dev-to-uploads.s3.amazonaws.com/i/vuoa6jsh5uhy32ehpizb.png" class="card-img-top"
-                        alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
-                        </p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                    </div>
-                </div>
-            </div>
-            <!-- FINALIZA CONTENIDO DE RIGHT CARDS BOOTSTRAP PARTE DIANA-->
+          </div>
         </div>
+        <!-- FINALIZA CONTENIDO DE LEFT SIDENAVBAR BOOTSTRAP FIN PARTE IVAN -->
+        <!-- INICIA CONTENIDO DE MAIN CARDS BOOTSTRAP PARTE YAIR-->
+        <div class="col-md-8 offset-md-1 offset-lg-1 col-lg-6 p-0">
+          <div class="card text-center card-ivan">
+            <div class="card-header">
+              <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link disabled"
+                    href="#"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Disabled</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <!-- FINALIZA CONTENIDO DE MAIN CARDS BOOTSTRAP PARTE YAIR-->
+        <!-- INICIA CONTENIDO DE RIGHT CARDS BOOTSTRAP PARTE DIANA-->
+        <div class="col-lg-1 offset-lg-1 p-0 d-none d-lg-block">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://dev-to-uploads.s3.amazonaws.com/i/vuoa6jsh5uhy32ehpizb.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <!-- FINALIZA CONTENIDO DE RIGHT CARDS BOOTSTRAP PARTE DIANA-->
+      </div>
     </div>
     <!-- FIN CONTENIDO PRINCIPAL BOOTSTRAP -->
 
     <!-- INICIO DE FOOTER PARTE DAVID -->
 
     <footer class="p-4 p-md-5 social-foot position-relative">
-        <div class="container p-0 text-center p-md-5 mx-auto ">
-            <nav>
-                <a href="/Home" class="p-2 d-inline-block">Home</a>
-                <a href="/Reading_List" class="p-2 d-inline-block">Reading List</a>
-                <a href="/Listings" class="p-2 d-inline-block">Listings</a>
-                <a href="/Podcasts" class="p-2 d-inline-block">Podcasts</a>
-                <a href="/Videos" class="p-2 d-inline-block">Videos</a>
-                <a href="/Tags" class="p-2 d-inline-block">Tags</a>
-                <a href="/Code_of_Conduct" class="p-2 d-inline-block">Code of Conduct</a>
-                <a href="/FAQ" class="p-2 d-inline-block">FAQ</a>
-                <a href="/DEV_Shop" class="p-2 d-inline-block">DEV Shop</a>
-                <a href="/Sponsors" class="p-2 d-inline-block">Sponsors</a>
-                <a href="/About" class="p-2 d-inline-block">About</a>
-                <a href="/Privacy_Policy" class="p-2 d-inline-block">Privacy Policy</a>
-                <a href="/Terms_of_Use" class="p-2 d-inline-block">Terms of Use</a>
-                <a href="/Contact" class="p-2 d-inline-block">Contact</a>
-                <a href="/New" class="p-2 d-inline-block"><b>Write a post</b></a>
-                <div>
-                    <a href="" class="mx-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
-                            aria-labelledby="anzyif92xiyry6c3ux0t6rqlc6mud6gb" class="crayons-icon ">
-                            <title id="anzyif92xiyry6c3ux0t6rqlc6mud6gb">Twitter</title>
-                            <path
-                                d="M22.162 5.656a8.383 8.383 0 01-2.402.658A4.196 4.196 0 0021.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 00-7.126 3.814 11.874 11.874 0 01-8.62-4.37 4.168 4.168 0 00-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 01-1.894-.523v.052a4.185 4.185 0 003.355 4.101 4.211 4.211 0 01-1.89.072A4.185 4.185 0 007.97 16.65a8.395 8.395 0 01-6.191 1.732 11.83 11.83 0 006.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.495 8.495 0 002.087-2.165l-.001-.001z"
-                                fill="#64707d"></path>
-                        </svg>
-                    </a>
-                    <a href="" class="mx-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
-                            aria-labelledby="akna7vxjyj1b6opa4xvunkjohdamgdzt" class="crayons-icon">
-                            <title id="akna7vxjyj1b6opa4xvunkjohdamgdzt">Facebook</title>
-                            <path
-                                d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.598c0-.784.218-1.319 1.342-1.319h1.434V5.857a19.188 19.188 0 00-2.09-.107c-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4a1 1 0 01-1-1V4a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1h-4.598z"
-                                fill="#64707d">
-                            </path>
-                        </svg>
-                    </a>
-                    <a href="" class="mx-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
-                            aria-labelledby="a26sgsvp0nd6imoew9ng0ufj1pd7kco9" class="crayons-icon">
-                            <title id="a26sgsvp0nd6imoew9ng0ufj1pd7kco9">Github</title>
-                            <path
-                                d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 006.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 012.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0022 12c0-5.525-4.475-10-10-10z"
-                                fill="#64707d">
-                            </path>
-                        </svg>
-                    </a>
-                    <a href="" class="mx-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
-                            aria-labelledby="ackdcj4zvosv0pb276zjeoxpg5mvveb9" class="crayons-icon">
-                            <title id="ackdcj4zvosv0pb276zjeoxpg5mvveb9">Instagram</title>
-                            <path
-                                d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153.509.5.902 1.105 1.153 1.772.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 01-1.153 1.772c-.5.508-1.105.902-1.772 1.153-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 01-1.772-1.153 4.904 4.904 0 01-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 011.153-1.772A4.897 4.897 0 015.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm6.5-.25a1.25 1.25 0 10-2.5 0 1.25 1.25 0 002.5 0zM12 9a3 3 0 110 6 3 3 0 010-6z"
-                                fill="#64707d">
-                            </path>
-                        </svg>
-                    </a>
-                    <a href="" class="mx-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
-                            aria-labelledby="aalm62ayirdgqpkwz5v6nsdp84kjxuu" class="crayons-icon">
-                            <title id="aalm62ayirdgqpkwz5v6nsdp84kjxuu">Twitch</title>
-                            <path
-                                d="M4.3 3H21v11.7l-4.7 4.7h-3.9l-2.5 2.4H7v-2.4H3V6.2L4.3 3zM5 17.4h4v2.4h.095l2.5-2.4h3.877L19 13.872V5H5v12.4zM15 8h2v4.7h-2V8zm0 0h2v4.7h-2V8zm-5 0h2v4.7h-2V8z"
-                                fill="#64707d">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-            </nav>
-            <hr class="w-25 mx-auto">
-            <p class="footer-description">
-                <a class="font-weight-bold link-footer">DEV Community</a> – A constructive and inclusive social network
-                for software developers. With you every step of your journey.
-            </p>
-            <div class="footer-description">
-                <p>Built on <a href="https://www.forem.com" class="link-footer font-weight-bold">Forem</a> — the <a
-                        href="https://dev.to/t/opensource" class="link-footer font-weight-bold">open source</a> software
-                    that powers <a href="https://dev.to" class="link-footer font-weight-bold">Dev</a> and other
-                    inclusive communities.</p>
-                <p>Made with love and <a href="https://dev.to/t/rails" class="link-footer font-weight-bold">Ruby on
-                        Rails</a>. DEV Community © 2016 - 2021.</p>
-                <div>
-                    <a href="https://www.forem.com">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            role="img" aria-labelledby="aafixwgcyck1th9l5rx1fatsywu4udlm"
-                            class="crayons-icon crayons-icon--default">
-                            <title id="aafixwgcyck1th9l5rx1fatsywu4udlm">Forem logo</title>
-                            <g clip-path="url(#clip0)" fill="#1AB3A6">
-                                <path
-                                    d="M4.603 1.438a8.056 8.056 0 017.643 5.478 8.543 8.543 0 00-3.023 5.968H8.054C3.606 12.884 0 9.296 0 4.87V1.468a.03.03 0 01.03-.03h4.573zM23.97 6.515a.03.03 0 01.03.03v2.833c0 4.11-3.354 7.442-7.491 7.442h-2.881v5.726h-2.305V14.53l.022-1.145c.294-3.843 3.526-6.87 7.469-6.87h5.155z">
-                                </path>
-                            </g>
-                            <defs>
-                                <clipPath id="clip0">
-                                    <path fill="#fff" d="M0 0h24v24H0z"></path>
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+      <div class="container p-0 text-center p-md-5 mx-auto">
+        <nav>
+          <a href="/Home" class="p-2 d-inline-block">Home</a>
+          <a href="/Reading_List" class="p-2 d-inline-block">Reading List</a>
+          <a href="/Listings" class="p-2 d-inline-block">Listings</a>
+          <a href="/Podcasts" class="p-2 d-inline-block">Podcasts</a>
+          <a href="/Videos" class="p-2 d-inline-block">Videos</a>
+          <a href="/Tags" class="p-2 d-inline-block">Tags</a>
+          <a href="/Code_of_Conduct" class="p-2 d-inline-block"
+            >Code of Conduct</a
+          >
+          <a href="/FAQ" class="p-2 d-inline-block">FAQ</a>
+          <a href="/DEV_Shop" class="p-2 d-inline-block">DEV Shop</a>
+          <a href="/Sponsors" class="p-2 d-inline-block">Sponsors</a>
+          <a href="/About" class="p-2 d-inline-block">About</a>
+          <a href="/Privacy_Policy" class="p-2 d-inline-block"
+            >Privacy Policy</a
+          >
+          <a href="/Terms_of_Use" class="p-2 d-inline-block">Terms of Use</a>
+          <a href="/Contact" class="p-2 d-inline-block">Contact</a>
+          <a href="/New" class="p-2 d-inline-block"><b>Write a post</b></a>
+          <div>
+            <a href="" class="mx-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-labelledby="anzyif92xiyry6c3ux0t6rqlc6mud6gb"
+                class="crayons-icon"
+              >
+                <title id="anzyif92xiyry6c3ux0t6rqlc6mud6gb">Twitter</title>
+                <path
+                  d="M22.162 5.656a8.383 8.383 0 01-2.402.658A4.196 4.196 0 0021.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 00-7.126 3.814 11.874 11.874 0 01-8.62-4.37 4.168 4.168 0 00-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 01-1.894-.523v.052a4.185 4.185 0 003.355 4.101 4.211 4.211 0 01-1.89.072A4.185 4.185 0 007.97 16.65a8.395 8.395 0 01-6.191 1.732 11.83 11.83 0 006.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.495 8.495 0 002.087-2.165l-.001-.001z"
+                  fill="#64707d"
+                ></path>
+              </svg>
+            </a>
+            <a href="" class="mx-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-labelledby="akna7vxjyj1b6opa4xvunkjohdamgdzt"
+                class="crayons-icon"
+              >
+                <title id="akna7vxjyj1b6opa4xvunkjohdamgdzt">Facebook</title>
+                <path
+                  d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.598c0-.784.218-1.319 1.342-1.319h1.434V5.857a19.188 19.188 0 00-2.09-.107c-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4a1 1 0 01-1-1V4a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1h-4.598z"
+                  fill="#64707d"
+                ></path>
+              </svg>
+            </a>
+            <a href="" class="mx-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-labelledby="a26sgsvp0nd6imoew9ng0ufj1pd7kco9"
+                class="crayons-icon"
+              >
+                <title id="a26sgsvp0nd6imoew9ng0ufj1pd7kco9">Github</title>
+                <path
+                  d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 006.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 012.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0022 12c0-5.525-4.475-10-10-10z"
+                  fill="#64707d"
+                ></path>
+              </svg>
+            </a>
+            <a href="" class="mx-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-labelledby="ackdcj4zvosv0pb276zjeoxpg5mvveb9"
+                class="crayons-icon"
+              >
+                <title id="ackdcj4zvosv0pb276zjeoxpg5mvveb9">Instagram</title>
+                <path
+                  d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153.509.5.902 1.105 1.153 1.772.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 01-1.153 1.772c-.5.508-1.105.902-1.772 1.153-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 01-1.772-1.153 4.904 4.904 0 01-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 011.153-1.772A4.897 4.897 0 015.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm6.5-.25a1.25 1.25 0 10-2.5 0 1.25 1.25 0 002.5 0zM12 9a3 3 0 110 6 3 3 0 010-6z"
+                  fill="#64707d"
+                ></path>
+              </svg>
+            </a>
+            <a href="" class="mx-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-labelledby="aalm62ayirdgqpkwz5v6nsdp84kjxuu"
+                class="crayons-icon"
+              >
+                <title id="aalm62ayirdgqpkwz5v6nsdp84kjxuu">Twitch</title>
+                <path
+                  d="M4.3 3H21v11.7l-4.7 4.7h-3.9l-2.5 2.4H7v-2.4H3V6.2L4.3 3zM5 17.4h4v2.4h.095l2.5-2.4h3.877L19 13.872V5H5v12.4zM15 8h2v4.7h-2V8zm0 0h2v4.7h-2V8zm-5 0h2v4.7h-2V8z"
+                  fill="#64707d"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </nav>
+        <hr class="w-25 mx-auto" />
+        <p class="footer-description">
+          <a class="font-weight-bold link-footer">DEV Community</a> – A
+          constructive and inclusive social network for software developers.
+          With you every step of your journey.
+        </p>
+        <div class="footer-description">
+          <p>
+            Built on
+            <a href="https://www.forem.com" class="link-footer font-weight-bold"
+              >Forem</a
+            >
+            — the
+            <a
+              href="https://dev.to/t/opensource"
+              class="link-footer font-weight-bold"
+              >open source</a
+            >
+            software that powers
+            <a href="https://dev.to" class="link-footer font-weight-bold"
+              >Dev</a
+            >
+            and other inclusive communities.
+          </p>
+          <p>
+            Made with love and
+            <a
+              href="https://dev.to/t/rails"
+              class="link-footer font-weight-bold"
+              >Ruby on Rails</a
+            >. DEV Community © 2016 - 2021.
+          </p>
+          <div>
+            <a href="https://www.forem.com">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                role="img"
+                aria-labelledby="aafixwgcyck1th9l5rx1fatsywu4udlm"
+                class="crayons-icon crayons-icon--default"
+              >
+                <title id="aafixwgcyck1th9l5rx1fatsywu4udlm">Forem logo</title>
+                <g clip-path="url(#clip0)" fill="#1AB3A6">
+                  <path
+                    d="M4.603 1.438a8.056 8.056 0 017.643 5.478 8.543 8.543 0 00-3.023 5.968H8.054C3.606 12.884 0 9.296 0 4.87V1.468a.03.03 0 01.03-.03h4.573zM23.97 6.515a.03.03 0 01.03.03v2.833c0 4.11-3.354 7.442-7.491 7.442h-2.881v5.726h-2.305V14.53l.022-1.145c.294-3.843 3.526-6.87 7.469-6.87h5.155z"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <path fill="#fff" d="M0 0h24v24H0z"></path>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
         </div>
-        <img class="position-absolute sloth d-none d-lg-block" alt="" width="52" height="120"
-            src="https://res.cloudinary.com/practicaldev/image/fetch/s--4RkRuwpj--/c_limit,f_auto,fl_progressive,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/i/wmv3mtusjwb3r13d5h2f.png">
+      </div>
+      <img
+        class="position-absolute sloth d-none d-lg-block"
+        alt=""
+        width="52"
+        height="120"
+        src="https://res.cloudinary.com/practicaldev/image/fetch/s--4RkRuwpj--/c_limit,f_auto,fl_progressive,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/i/wmv3mtusjwb3r13d5h2f.png"
+      />
     </footer>
     <!-- FIN DE FOOTER PARTE DAVID-->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

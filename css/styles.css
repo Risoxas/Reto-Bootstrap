@@ -25,9 +25,9 @@ body {
   border: none;
 }
 
-.container-left-nav .card,
-.container-left-nav .card-header,
-.container-left-nav .list-group-item {
+.container-left-nav .card-ivan,
+.container-left-nav .card-header-ivan,
+.container-left-nav .list-group-item-ivan {
   background-color: transparent !important;
   border: none;
 }
